@@ -1,0 +1,25 @@
+{
+    "server": {
+        "debug": true,
+        "accessLog": "/tmp/proxy2_access.log",
+        "port": 8080,
+        "workers": 1,
+        "maxSockets": 100,
+        "deadBackendTTL": 10,
+        "tcpTimeout": 10,
+        "retryOnError": 3,
+        "deadBackendOn500": true,
+        "httpKeepAlive": false,
+        "servername": "HipacheServer",
+        "hostname": "Hs/153"
+    },
+    "benchmode": "wget",
+    "redisHost": "192.168.1.107",
+    "redisPort": 6379,
+    "project": {
+    	"c1": {
+    	"url": ["http://127.0.0.1/cc/redirect_1.html", "http://127.0.0.1/cc/em_click.html"],
+    	"append_random": true
+    	}
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "js-runner",
+  "version": "0.2.4",
+  "description": "Complete high-scaled reverse-proxy solution",
+  "keywords": [
+    "reverse",
+    "proxy",
+    "http",
+    "http-proxy"
+  ],
+  "main": "./bin/js-runner",
+  "bin": {
+    "js-runner": "./bin/js-runner"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "read-installed": "0.2.2",
+    "optimist": "0.3.x",
+    "phantom": "0.5.x",
+    "fibers": "x",
+    "request": "2.33.x"
+  },
+  "scripts": {
+    "start": "node bin/js-runner",
+    "test": "nodeunit test/test_*.js",
+    "jshint": "jshint --config jshint.json -- bin/js-runner lib/*.js"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "engineStrict": true
+}
